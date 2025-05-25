@@ -14,7 +14,7 @@ $events = $repo->findAll();
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-    <h1>Event Liste</h1>
+    <h1>Event List</h1>
 
       <form action="create.php" method="POST" class="event_form">
         <h2>Add new Event</h2>
