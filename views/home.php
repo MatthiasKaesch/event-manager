@@ -15,7 +15,7 @@
 <body>
   <h1>Welcome Home Page</h1>
   <p>Edit Me please</p>
-  <a href="../" >Navigate to rootfile</a>
+  <a href="../public/index.php" >Navigate to rootfile</a>
 </body>
 </html>
   

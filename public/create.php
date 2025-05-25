@@ -1,7 +1,7 @@
 <?php
 
 require_once __DIR__ . '/../src/db.php';
-require_once __DIR__ . '/../src/EventRepository.php';
+require_once __DIR__ . '/../src/Repository/EventRepository.php';
 
 $repo = new EventRepository($pdo);
 

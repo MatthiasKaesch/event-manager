@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/../src/db.php';
-require_once __DIR__ . '/../src/EventRepository.php';
+require_once __DIR__ . '/../src/Repository/EventRepository.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['id'])) {
     $id = (int) $_POST['id'];
