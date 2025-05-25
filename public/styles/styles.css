@@ -46,6 +46,25 @@
   margin-left: 0.5rem;
 }
 
+.event_actions {
+  display: flex;
+  gap: 0.125rem;
+  justify-content: end;
+}
+.event_actions .edit_button,
+.event_actions .delete_button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.event_actions .edit_button {
+  color: royalblue;
+}
+.event_actions .delete_button {
+  color: crimson;
+}
+
 body {
   margin: 0;
   padding: 2rem;

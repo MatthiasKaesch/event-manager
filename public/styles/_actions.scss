@@ -1,0 +1,21 @@
+.event_actions {
+  display: flex;
+  gap: 0.125rem;
+  justify-content: end;
+
+  .edit_button,
+  .delete_button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .edit_button {
+    color: royalblue;
+  }
+
+  .delete_button {
+    color: crimson;
+  }
+}
