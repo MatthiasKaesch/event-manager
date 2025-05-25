@@ -2,7 +2,7 @@
   "name": "event-manager",
   "version": "1.0.0",
   "scripts": {
-    "sass": "sass --watch public/styles/styles.scss public/styles/styles.css --no-source-map"
+    "sass": "sass --watch public/assets/styles.scss public/assets/styles.css --no-source-map"
   },
   "devDependencies": {
     "@prettier/plugin-php": "^0.22.4",

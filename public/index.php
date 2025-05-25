@@ -11,7 +11,7 @@ $events = $repo->findAll();
 <head>
     <meta charset="UTF-8">
     <title>Event Liste</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
     <h1>Event Liste</h1>
