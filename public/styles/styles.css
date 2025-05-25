@@ -1,3 +1,51 @@
+.event_form {
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.event_form h2 {
+  margin-top: 0;
+}
+
+.event_form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+.event_form input,
+.event_form textarea {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.event_form button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #4f6df5;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.delete_button {
+  color: crimson;
+  text-decoration: none;
+  font-weight: bold;
+  float: right;
+  margin-left: 0.5rem;
+}
+
 body {
   margin: 0;
   padding: 2rem;
@@ -71,4 +119,5 @@ h1 {
   font-size: 0.85rem;
   color: #888;
   text-align: right;
+  padding: 10rem;
 }
