@@ -16,7 +16,7 @@ $events = $repo->findAll();
 <body>
     <h1>Event Liste</h1>
 
-      <form action="submit.php" method="POST" class="event_form">
+      <form action="create.php" method="POST" class="event_form">
         <h2>Add new Event</h2>
         <label>
             Title:
