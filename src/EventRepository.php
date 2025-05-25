@@ -11,8 +11,15 @@ class EventRepository {
         return $this->pdo->query("SELECT * FROM events ORDER BY start_date ASC")->fetchAll();
     }
 
-    public function add($title, $tag, $desc, $speakers, $date) {
-        $stmt = $this->pdo->prepare("INSERT INTO events (...) VALUES (?, ?, ?, ?, ?)");
-        return $stmt->execute([$title, $tag, $desc, $speakers, $date]);
+    public function create($title, $tag, $desc, $speakers, $date) {
+        $stmt = $this->pdo->prepare("INSERT INTO events  (title, tag, description, speakers, start_date) VALUES (:title, :tag, :desc, :speakers, :date)");
+        return $stmt->execute(["title" => $title, "tag" => $tag, "desc" => $desc, "speakers" => $speakers, "date" => $date]);
+    }
+
+    public function delete(int $id): bool  {
+        $stmt = $this->pdo->prepare("DELETE FROM events WHERE id = :id");
+        return $stmt->execute(["id" => $id]);
     }
 }
+
+

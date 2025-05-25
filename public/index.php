@@ -44,7 +44,13 @@ $events = $repo->findAll();
     <ul class="event_board">
         <?php foreach ($events as $event): ?>
             <li class="event_card">
+                <form method="post" action="delete.php" onsubmit="return confirm('Wirklich löschen?')">
+                    <input type="hidden" name="id" value="<?= $event['id'] ?>">
+                    <button class="delete_button" type="submit">✖</button>
+                </form>
+
                 <div class="event_head">
+                   
                     <h2 class="event_title">
                         <?= htmlspecialchars($event['title']) ?>
                     </h2>
