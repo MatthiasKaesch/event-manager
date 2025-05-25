@@ -17,9 +17,9 @@ $events = $repo->findAll();
     <h1>Event Liste</h1>
 
       <form action="submit.php" method="POST" class="event_form">
-        <h2>Neues Event hinzufügen</h2>
+        <h2>Add new Event</h2>
         <label>
-            Titel:
+            Title:
             <input type="text" name="title" required>
         </label>
         <label>
@@ -27,7 +27,7 @@ $events = $repo->findAll();
             <input type="text" name="tag" required>
         </label>
         <label>
-            Beschreibung:
+            Description:
             <textarea name="description" required></textarea>
         </label>
         <label>
@@ -35,7 +35,7 @@ $events = $repo->findAll();
             <input type="text" name="speakers" required>
         </label>
         <label>
-            Start-Datum:
+            Date:
             <input type="date" name="start_date" required>
         </label>
         <button type="submit">Hinzufügen</button>
