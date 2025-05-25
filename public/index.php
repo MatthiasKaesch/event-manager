@@ -13,6 +13,31 @@ $events = $pdo->query('SELECT * FROM events ORDER BY start_date ASC')->fetchAll(
 </head>
 <body>
     <h1>Event Liste</h1>
+
+      <form action="submit.php" method="POST" class="event_form">
+        <h2>Neues Event hinzufügen</h2>
+        <label>
+            Titel:
+            <input type="text" name="title" required>
+        </label>
+        <label>
+            Tag:
+            <input type="text" name="tag" required>
+        </label>
+        <label>
+            Beschreibung:
+            <textarea name="description" required></textarea>
+        </label>
+        <label>
+            Speaker(s):
+            <input type="text" name="speakers" required>
+        </label>
+        <label>
+            Start-Datum:
+            <input type="date" name="start_date" required>
+        </label>
+        <button type="submit">Hinzufügen</button>
+    </form>
     
     <ul class="event_board">
         <?php foreach ($events as $event): ?>
